@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Watch live BBC TV channels, enjoy TV programmes you missed and view exclusive content on BBC iPlayer.">
+	<meta name="keywords" content="BBC,">
+	<meta name="author" content="Steven Bailey">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BBC Radio &amp; Music Technical Test</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+
+<body>
+	
+	<div class="col-sm-10 col-sm-offset-1">
+
+		<div class="text-center">
+			<h1>BBC Radio &amp; Music Technical Test</h1>
+			<h2 id="bbcIplayerLogo">BBC iPlayer
+				<span id="progFinder">- Programme Finder</span>
+			</h2>
+		</div>
+
+		{{#results}}
+		<li>
+	      <img class="imagePID img-responsive img-rounded" src="https://ichef.bbci.co.uk/images/ic/480x270/{{programme.image.pid}}.jpg">
+	      <div style="float:left;">
+	        <p class="title">{{programme.title}}</p>
+	        <p class="synopsis">{{programme.short_synopsis}}</p>
+	      </div>
+	      <hr style="clear:both;">
+    	</li>
+		{{/results}}
+
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="scripts/search.js"></script>
+</body>
+
+</html>
