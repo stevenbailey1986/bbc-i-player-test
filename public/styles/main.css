@@ -1,0 +1,62 @@
+body {
+	background-color:#262525;	
+}
+
+h1 {
+	color:white;
+}
+
+h2 {
+	color:#b8b894;
+}
+
+hr {
+	color:#b8b894;
+}
+
+#bbcIplayerLogo {
+	color:#f54997;
+	margin: 50px 0px;
+}
+
+.title {
+	color:#ffffff;
+	font-size: 45px;;
+	font-weight: 700px;
+}
+
+.synopsis {
+	color:#a4a4a4;
+	font-size: 30px;
+}
+
+.imagePID {
+	float:left;
+	margin: 20px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.img2 {
+    float: left;
+    margin-right:20px;
+}
+
+#progSearch {
+	height: 50px;
+	background-color: #a4a4a4;
+	color: black;
+	font-size: 30px;
+}
+/*, Grey: #767676, pink #f54997, lightgrey:#b8b894;*/
+#progFinder{
+	color: white;
+}
+
+input::-webkit-calendar-picker-indicator {
+  display: none;
+}
