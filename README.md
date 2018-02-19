@@ -8,7 +8,8 @@ To start the server:
  node app.js
 
 To access the page being rendered server side:
- localhost:3000/serverrendered
+ localhost:3000/serverrendered?q=archers
 
 To access the ajax version:
- localhost...
+ http://localhost:3000
+

@@ -1,11 +1,9 @@
 /*** Set required configuration for Node JS server.
  * Requires Express JS as framework for Node JS.
- * Requires bodyParser to parse JSON.
  * Requires mustacheExpress as engine-view to render HTML from server-side.
  * Requires search-service, a JS module, to seperate server logic and make easier to follow.
  */
 const express = require("express");
-const bodyParser = require("body-parser");
 const mustacheExpress = require('mustache-express');
 const searchService = require("./search-service");
 const app = express();
@@ -15,9 +13,6 @@ app.set("port", process.env.PORT || 3000);
 app.engine('mustache', mustacheExpress());
 app.set('view engine', 'mustache');
 app.set('views', __dirname + '/views');
-
-// app.use(bodyParser.json());
-// app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(express.static("public"));
 
